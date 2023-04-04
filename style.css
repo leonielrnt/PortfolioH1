@@ -155,23 +155,29 @@ nav ul a {
 
 .ui_project {
   background-image: url(Images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .ui_project p {
   font-family: Wellington Demi-bold;
   font-size: 20px;
   margin: 0;
-  padding-top: 220px;
+  padding-top: 350px;
 }
 
 .hackathon {
   background-image: url(Images/logo_WFE.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hackathon p {
   font-family: Wellington Demi-bold;
   font-size: 20px;
-  padding-top: 220px;
+  padding-top: 335px;
   margin: 0;
 }
 
@@ -238,22 +244,71 @@ nav ul a {
 }
 
 .sport {
+  position: relative;
   grid-row-start: 1;
 }
 .sport p {
   margin-top: 13px;
   margin-left: 6px;
 }
+.sport_text {
+  font-family: Wellington Regular;
+  font-size: 16px;
+
+  opacity: 0;
+  width: 230px;
+  height: 170px;
+  background-color: #dedede;
+  border-radius: 12px;
+  padding-left: 8px;
+  transition-duration: 0.5s;
+
+  position: absolute;
+  top: -180px;
+  left: -20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sport:hover .sport_text {
+  opacity: 1;
+}
 
 .music {
+  position: relative;
   grid-row-start: 1;
 }
 .music p {
   margin-top: 10px;
   margin-left: -3px;
 }
+.music_text {
+  font-family: Wellington Regular;
+  font-size: 16px;
+
+  opacity: 0;
+  width: 230px;
+  height: 170px;
+  background-color: #dedede;
+  border-radius: 12px;
+  padding-left: 8px;
+  transition-duration: 0.5s;
+
+  position: absolute;
+  top: -180px;
+  left: -20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music:hover .music_text {
+  opacity: 1;
+}
 
 .movies {
+  position: relative;
   grid-row-start: 1;
 }
 .movies p {
@@ -264,19 +319,90 @@ nav ul a {
   width: 68px;
   height: 68px;
 }
+.movies_text {
+  font-family: Wellington Regular;
+  font-size: 16px;
+
+  opacity: 0;
+  width: 230px;
+  height: 170px;
+  background-color: #dedede;
+  border-radius: 12px;
+  padding-left: 8px;
+  transition-duration: 0.5s;
+
+  position: absolute;
+  top: -180px;
+  left: -20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movies:hover .movies_text {
+  opacity: 1;
+}
 
 .games {
+  position: relative;
   grid-row-start: 1;
 }
 .games p {
   margin-left: -15px;
 }
+.games_text {
+  font-family: Wellington Regular;
+  font-size: 16px;
+
+  opacity: 0;
+  width: 230px;
+  height: 170px;
+  background-color: #dedede;
+  border-radius: 12px;
+  padding-left: 8px;
+  transition-duration: 0.5s;
+
+  position: absolute;
+  top: -180px;
+  left: -20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.games:hover .games_text {
+  opacity: 1;
+}
 
 .cooking {
+  position: relative;
   grid-row-start: 1;
 }
 .cooking p {
   margin-left: 8px;
+}
+.cooking_text {
+  font-family: Wellington Regular;
+  font-size: 16px;
+
+  opacity: 0;
+  width: 170px;
+  height: 170px;
+  background-color: #dedede;
+  border-radius: 12px;
+  padding-left: 12px;
+  transition-duration: 0.5s;
+
+  position: absolute;
+  top: -180px;
+  left: -20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cooking:hover .cooking_text {
+  opacity: 1;
 }
 
 .skills_title {
