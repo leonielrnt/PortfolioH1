@@ -1,0 +1,427 @@
+/* New fonts */
+@font-face {
+  font-family: Gabriela;
+  src: url(Fonts/Gabriela/Gabriela-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Wellington;
+  src: url(Fonts/tt_wellingtons/TT\ Wellingtons\ Trial\ Medium.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: Wellington Demi-bold;
+  src: url(Fonts/tt_wellingtons/TT\ Wellingtons\ Trial\ DemiBold\ Italic.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: Wellington Regular;
+  src: url(Fonts/tt_wellingtons/TT\ Wellingtons\ Trial\ Regular.otf)
+    format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navigation bar */
+
+.header {
+  background-color: #33926a;
+  width: 100%;
+  height: 62px;
+  font-family: Wellington Regular;
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header ul {
+  list-style-type: none;
+}
+
+.menu {
+  padding-top: 23px;
+}
+
+nav ul a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Home section */
+
+.home {
+  font-family: Gabriela;
+  font-size: 28px;
+  text-decoration-line: underline;
+}
+.home:hover {
+  cursor: pointer;
+}
+
+.name {
+  font-family: Gabriela;
+  font-size: 80px;
+  padding-left: 90px;
+
+  grid-row-start: 2;
+}
+
+.description {
+  font-family: Gabriela;
+  font-size: 52px;
+  padding-left: 90px;
+
+  grid-row-start: 5;
+}
+
+#home {
+  background-color: #43c08c;
+  width: 100%;
+  height: 670px;
+  color: white;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.white_arrow {
+  width: 69px;
+  height: 89px;
+  color: #ffffff;
+  position: relative;
+  left: 50%;
+  padding-bottom: 50px;
+
+  grid-row-start: 8;
+}
+
+.white_arrow:hover {
+  cursor: pointer;
+}
+
+/* Projects section */
+
+#projects {
+  margin: 0;
+  background-color: #f1f1f1;
+  height: 635px;
+}
+
+.title_section {
+  margin: 0;
+  font-family: Gabriela;
+  font-size: 52px;
+  padding-left: 90px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+.slider {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  overflow: hidden;
+  width: 50%;
+  height: 55%;
+  margin-top: 720px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.ui_project {
+  background-image: url(Images/logo.png);
+}
+
+.ui_project p {
+  font-family: Wellington Demi-bold;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 220px;
+}
+
+.hackathon {
+  background-image: url(Images/logo_WFE.png);
+}
+
+.hackathon p {
+  font-family: Wellington Demi-bold;
+  font-size: 20px;
+  padding-top: 220px;
+  margin: 0;
+}
+
+.prev {
+  font-family: Wellington;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  margin-top: 720px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+
+  cursor: pointer;
+}
+
+.next {
+  font-family: Wellington;
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  margin-top: 720px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+
+  cursor: pointer;
+}
+
+/* About me section */
+
+.presentation {
+  font-family: Wellington;
+  font-size: 28px;
+  width: 853px;
+  height: 80px;
+  padding-left: -30px;
+}
+
+.meImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.pres_elements {
+  padding-left: 90px;
+  padding-right: 90px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hobbies {
+  padding-left: 90px;
+
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 50%;
+}
+
+.hobbies p {
+  font-family: Gabriela;
+}
+
+.sport {
+  grid-row-start: 1;
+}
+.sport p {
+  margin-top: 13px;
+  margin-left: 6px;
+}
+
+.music {
+  grid-row-start: 1;
+}
+.music p {
+  margin-top: 10px;
+  margin-left: -3px;
+}
+
+.movies {
+  grid-row-start: 1;
+}
+.movies p {
+  margin-top: 11px;
+  margin-left: -20px;
+}
+.movies img {
+  width: 68px;
+  height: 68px;
+}
+
+.games {
+  grid-row-start: 1;
+}
+.games p {
+  margin-left: -15px;
+}
+
+.cooking {
+  grid-row-start: 1;
+}
+.cooking p {
+  margin-left: 8px;
+}
+
+.skills_title {
+  font-family: Gabriela;
+  font-size: 40px;
+  text-decoration-line: underline;
+  padding-left: 90px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.skills li {
+  font-family: Wellington;
+  font-size: 28px;
+  margin-left: 90px;
+}
+
+.CV {
+  margin-left: 450px;
+}
+
+.CV_button {
+  font-family: Wellington Demi-bold;
+  background-color: white;
+  font-size: 18px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-bottom: 150px;
+}
+
+/* Contact section */
+
+.contact_section {
+  width: 100%;
+  height: 535px;
+  background-color: #d9d9d9;
+}
+
+.contact_infos li {
+  font-family: Wellington Regular;
+  font-size: 24px;
+  margin-left: 90px;
+}
+
+.contact_infos li:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding-bottom: 20px;
+}
+.contact_infos li:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding-bottom: 20px;
+}
+.contact_infos li:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding-bottom: 20px;
+}
+
+.input_name {
+  width: 350px;
+  height: 30px;
+  border-radius: 12px;
+  margin-left: 80px;
+}
+.input_mail {
+  width: 350px;
+  height: 30px;
+  border-radius: 12px;
+  margin-left: 88px;
+}
+.input_message {
+  width: 500px;
+  height: 70px;
+  border-radius: 12px;
+  margin-left: 35px;
+}
+
+.contact_infos button {
+  font-family: Wellington Regular;
+  font-size: 24px;
+  background-color: #43c08c;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  border-radius: 24px;
+  margin-left: 50px;
+  transition-duration: 0.2s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_infos button:hover {
+  width: 230px;
+  cursor: pointer;
+}
+
+.contact_infos button:active {
+  box-shadow: inset 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.contact_infos img {
+  margin-left: 15px;
+}
+
+.personal_infos {
+  font-family: Wellington Regular;
+  font-size: 20px;
+  margin-left: 90px;
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.phone_number {
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.mail {
+  margin-top: 60px;
+}
+
+.git {
+  margin-left: 500px;
+}
+
+.linkedin {
+  margin-left: 20px;
+}
